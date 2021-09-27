@@ -5,6 +5,6 @@ import { Router } from 'express';
 const router = Router();
 
 router.get('/', homeController.getAppInfo);
-router.get('/bagunca', homeController.lolita);
+router.get('/pesquisaImagem', homeController.searchImagemByName);
 
 export default router;
