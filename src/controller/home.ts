@@ -14,19 +14,15 @@ export const getAppInfo = (req: Request, res: Response) => {
   res.json(result);
 };
 export function searchImagemByName(req: Request, res: Response) {
-  
   let nome = req.query.palavraChave || 'Abelha';
   const GoogleImages = require('google-images');
-  
+
   const client = new GoogleImages(
     process.env.CSE_ID,
     process.env.GPROJECT_API_KEY,
-    );
-    
-    client.search(nome).then((images: any) => {
-      res.json({thumb:images[1].thumbnail.url,
-                big:images[1].url})
-      
-      
+  );
+
+  client.search(nome).then((images: any) => {
+    res.json({ thumb: images[1].thumbnail.url, big: images[1].url });
   });
 }
