@@ -14,7 +14,7 @@
     "build": "NODE_ENV=production run-s  clean transpile",
     "watch": "tsc --watch",
     "dev": "yarn prettify & transpile & nodemon",
-    "start": "npm run clean && npm run build && node dist/src/index.js",
+    "start": "npm run clean && npm run build && node ./dist/src/index.js",
     "service:start": "pm2 start ecosystem.config.js",
     "service:reload": "pm2 reload ecosystem.config.js",
     "service:startup": "pm2 startup",
