@@ -6,6 +6,7 @@ export default function searchImagemByName(req:any, res:any) {
   const GoogleImages = require('google-images');
     console.log("id eh "+process.env.CSE_ID)
 
+
   const client = new GoogleImages(
     process.env.CSE_ID,
     process.env.GPROJECT_API_KEY,
