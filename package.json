@@ -11,6 +11,7 @@
     "lint:fix": "tslint --fix -c tslint.json 'src/**/*.ts'; exit 0",
     "transpile": "tsc",
     "clean": "rm -rf dist",
+
     "build": "NODE_ENV=production npm run clean && npm run transpile && ls dist",
     "watch": "tsc --watch",
     "dev": "yarn prettify & transpile & nodemon",
