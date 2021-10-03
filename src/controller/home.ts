@@ -15,6 +15,7 @@ export const getAppInfo = (req: Request, res: Response) => {
 };
 export function searchImagemByName(req: Request, res: Response) {
   let nome = req.query.palavraChave || 'Abelha';
+
   const GoogleImages = require('google-images');
 
   const client = new GoogleImages(
