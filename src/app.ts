@@ -9,6 +9,7 @@ import routes from '@/routes';
 export const createApp = (): express.Application => {
   const app = express();
 
+  app.use(express.static(path.join(__dirname, 'dist')));
   app.use(cors());
   app.use(helmet());
   app.use(morgan('dev'));
