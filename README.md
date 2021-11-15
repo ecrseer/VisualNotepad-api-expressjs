@@ -1,8 +1,8 @@
-Typescript App on Heroku
+Api que alimenta o app visual notepad-android
 ========================
 
-This is a simple Node.js + Express application written in Typescript
-that can be built and run on Heroku.
+Servidor simples em express+ nodejs que atraves do google search api 
+se torna uma api que serve imagens atraves da palavra pesquisada 
 
 ## Deploy
 To deploy this application simply create a new Heroku app
